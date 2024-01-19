@@ -299,7 +299,7 @@ if (isset($_POST['quantitysub'])) {
 <div class="cont">
     <div class="conta">
         <form method="POST" action="">
-        <img src="../../../Image/Items/<?php echo $row['product_image'] ?>" alt="" width="400px" height="300px">
+        <img src="../../../html/<?php echo $row['product_image'] ?>" alt="" width="400px" height="300px">
             <div class="base">
                 <div class="info">
                     <div class="name"><span><?php echo $row['product_name'] ?></span></div>
