@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | New Job</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="createproduct.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="side-data create-job">
+      <h3>Add product</h3>
+      <form method="post" action="handleCreate.php" enctype="multipart/form-data">
+        <input type="text" placeholder="Enter product name" name="product_name" />
+        <input type="number" placeholder="Enter product price" name="product_price" />
+        <input type="number" placeholder="Enter Available Quantity" name="product_quantity" />
+        <input type="file" name="product_image" />
+        <button class="secondary-btn">Add product</button>
+      </form>
+    </div>
+  </body>
+</html>
