@@ -1,0 +1,189 @@
+main{
+    padding-left: 250px;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+section.contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+
+}
+div.left{
+    display: flex;
+    width: 40%;
+}
+div.right{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: var(--primary-color-light);
+    border-radius: 10px;
+}
+div.right h2{
+    color: var(--text-color);
+}
+div.right .input {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+div.right .input{
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+div.right .input .btn{
+    width: auto;
+    border: none;
+}
+.inputbox{
+    position: relative;
+    width: 100%
+}
+.inputbox input,textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--toggle-color);
+    background: var(--primary-color-light);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: var(--text-color);
+
+    transition: all 0.5s ease;
+}
+.inputbox input:valid~span,
+.inputbox input:focus ~span{
+    color: var(--primary-color-light);
+    transform: translateX(10px) translateY(-5px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: var(--primary-color);
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+.inputbox textarea:valid~span,
+.inputbox textarea:focus ~ span{
+    color: var(--primary-color-light);
+    transform: translateX(10px) translateY(-8px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: var(--primary-color);
+    border-radius: 3px;
+    transition: all 0.5s ease;
+
+}
+.inputbox input:valid,
+.inputbox input:focus{
+    border: 1px solid var(--primary-color);
+}
+.inputbox textarea:focus{
+    border: 1px solid var(--primary-color);
+}
+.inputbox span:focus{
+    color: var(--primary-color);
+}
+div.right h2{
+    font-size: 2rem;
+    padding: 20px;
+}
+div.right h2 span{
+    color: var(--primary-color);
+}
+.sub{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.left .contact-info .icon{
+    box-shadow: var(--hover-box-shodow);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.left{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+}
+.left .social-info{
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ flex-direction: column;
+ color: var(--text-color);
+}
+.left .social-info span{
+    color: var(--primary-color);
+}
+.left .social-info .img{
+    background-color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: var(--hover-box-shodow);
+}
+.info p{
+    font-size: 10px;
+    color: var(--text-color);
+}
+.contact-info h2{
+    color: var(--text-color);
+}
+.left .social{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.c{
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+.left .social span{ 
+    background-color: var(--primary-color);
+    color: var(--primary-color-light);
+    padding: 5px;
+    border-radius: 14px;
+}
+.left .bx{
+    color: var(--primary-color-light);
+    background: var(--primary-color);
+    border-radius: 6px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.left .social .bx{
+    position: relative;
+    top: 13px;
+}

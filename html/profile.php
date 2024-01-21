@@ -110,16 +110,29 @@ if (isset($_GET['logout']) && $_GET['logout'] == 'success') {
         </div>
       </div>
     </nav>
-    <main>
-      <div class="container">
-        <div class="img">
-            <img src="../Image/avator.png" alt="">
-        </div>
-        <div class="info">
-            <div><span id="email">Names : </span><label for="email">Walmond</label></div>
-            <div><span id="email">Email : </span><label for="email">Walmond@gmail.com</label></div>
-        </div>
-      </div>
+
+          <section>
+          <form action="updateprofile.php" method="POST" id="form" enctype="multipart/form-data">
+                <div class="container">
+
+                  <div class="img">
+                        <div class="image"><img src="../Image/avator.png" alt=""></div>
+                        <input type="file" name="product_image" />
+                    </div>
+                    <div class="info">
+                        <div class="info1">
+                          <div><span id="email">Names : </span><label for="email"> Walmond</label></div>
+                          <div><span id="email">Email : </span><label for="email"> Walmond@gmail.com</label></div>
+                        </div>
+                        <div><span id="email">Change Password <i class='bx bx-edit'></i></span></div>
+                        <div><div><span id="email">Old Password</span></div><input type="text" placeholder="Old password" name="old"></div>
+                        <div><div><span id="email">New Password</span></div><input type="text" placeholder="New password" name="new"></div>
+                        <button type="submit" id="btn" name="change">Change</button>
+                  </div>
+
+            </div>
+            </form>
+          </section>
     </main>
     <script src="script.js"></script>
   </body>

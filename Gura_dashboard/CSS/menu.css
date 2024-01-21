@@ -1,0 +1,31 @@
+#table{
+    width: 100%;
+    margin-top: 100px;
+}
+tr{
+    color: var(--text-color);
+    
+}
+th{
+    text-align: left;
+    font-weight: 900;
+    padding: 20px;
+    padding-left: 40px;
+    background: var(--primary-color);
+    color: var(--primary-color-light);
+}
+td{
+    padding: 20px;
+    padding-left: 40px;
+}
+tr:nth-child(even){
+    background-color: #ffffff6f;
+}
+tr:hover{
+    background-color: var(--primary-hover);
+    color: var(--primary-color-light);
+}
+tr:hover~td{
+    padding: 20px;
+    padding-left: 40px;
+}

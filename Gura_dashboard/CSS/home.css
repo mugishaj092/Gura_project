@@ -1,0 +1,93 @@
+main{
+    padding-left: 250px;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.container .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+.container .image-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+}
+.container .image-text img{
+    width: 100px;
+    border-radius: 10px;
+}
+.container .text.header-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.container .header-text .name{
+    font-weight: 800;
+}
+.online-shoping{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.online-shoping .photo{
+    width: 60%;
+}
+.online-shoping .photo img{
+    width: 100%;
+    filter: drop-shadow(1px 2px 5px var(--primary-color));
+}
+.online-shoping .right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.online-shoping .right .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 19.5px;
+    padding-bottom: 20%;
+}
+.online-shoping .right .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.online-shoping .right span.btn{
+    align-self: center;
+    width: 30%;
+    height: 10%;
+    border-radius: 12px;
+}
+.online-shoping .right span.btn button{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    color: var( --primary-color-light);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.online-shoping .right span.btn button:hover{
+    transform: scale(1.05);
+    background: var(--primary-hover);
+}
